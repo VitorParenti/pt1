@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
+body{
+    margin: 0px;
+    background-color:#5B5B5B ;
+    font-family: 'Ubuntu';
+}
+header{
+    background-color: black;
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.headerLink{
+    margin: 10px;
+    text-decoration: none;
+}
+.homeLink{
+    margin: 10px;
+    align-self: flex-end;    
+}
+#logo{
+    height: 80%;
+}
+@media (max-width:1000px) or (orientation: portrait){
+    #logo{
+        display: none;
+    }
+    .homeLink{
+        margin: 10px;
+        align-self: center;        
+    }
+    #homeIcon{
+        height: 50%;
+    }
+    #linksContainer{
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    header{
+        height: 10%;
+    }
+}       
+@media (max-width:1000px){
+    #homeIcon{
+        display: none;
+    }
+}
+#homeIcon{
+    height: 50px;
+}
+.headerText{
+    color:#D36130;
+    font-size: 200%;
+    font-family: 'Ubuntu';
+}
+#linksContainer{
+    display: flex;
+    align-items: center;
+    right: 0%;
+    position: absolute;
+}

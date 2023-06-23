@@ -1,0 +1,45 @@
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+h1{
+    font-family: 'Crimson Text';
+    color: #FF844F;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    font-size: 1000%;
+    text-align: center;
+}
+h2{
+    font-family: 'Crimson Text';
+    text-align: center;
+    font-size: 750%;
+}
+h3{
+    font-family: 'Crimson Text';
+    color: #D36130;
+    font-size: 500%;
+    text-align: center;
+}
+p{
+    font-size: 200%;
+    color: white;
+    text-align: center;
+    width: 800px;
+}
+#branco{
+    color: #FEFFCB;
+}
+@keyframes slideUpwards {
+    from {translate: 0 110%;}
+    to {translate: 0 0;}
+  }  
+.mana{
+    width: 15%;
+    translate: 0 110%;
+    transition:transform 1s ease-out;
+}
+.mana:click{
+    transform: translateY(-110%);
+}
