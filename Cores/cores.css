@@ -1,0 +1,39 @@
+
+#branco {
+    color: #FEFFCB;
+}
+
+#azul {
+    color: #5585FF;
+}
+#verde{
+    color:#146200;
+}
+#preto{
+    color:#303030;
+}
+
+@keyframes roll {
+    from {
+        translate: 0 110%;
+        opacity: 0%;
+        rotate: 0deg;
+    }
+
+    to {
+        translate: 0 0;
+        opacity: 100%;
+        rotate: 360deg;
+    }
+}
+
+.mana {
+    opacity: 0;
+    translate: 0 110%;
+    width: 300px;
+    margin-top: -300px;
+}
+.mana:hover{
+    animation: roll 1s ease-out;
+    animation-fill-mode: forwards;
+}

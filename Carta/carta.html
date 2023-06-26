@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carta.css">
+    <link rel="stylesheet" href="../index.css">
+    <script src="carta.js"></script>
+    <title>Carta</title>
+</head>
+
+<body>
+    <header>
+        <image src="../images/logo.png" id="logo"></image>
+        <a href="../home/home.html" class="homeLink">
+            <image src="../images/homeIcon.png" id="homeIcon"></image>
+        </a>
+        <form action="../Carta/carta.html">
+            <label for="cardName">Card name:</label><br>
+            <input type="text" id="cardName" name="cardName" value="Search for a card"><br>
+        </form> 
+        <div id="linksContainer">
+            <a href="../Cores/cores.html" class="headerLink">
+                <div class="headerText">Cores</div>
+            </a>
+            <a href="../ComoJogar/comoJogar.html" class="headerLink">
+                <div class="headerText">Como jogar</div>
+            </a>
+            <a href="../Inicio/inicio.html" class="headerLink">
+                <div class="headerText">O inicio</div>
+            </a>
+        </div>
+    </header>
+    <div id="mainContainer" >
+        <h1 id="title"></h1>
+        <div class="cardContainer" id="cardContainer"></div> 
+    </div>
+    
+</body>
+</html>
